@@ -1,0 +1,28 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Star Wars Wars Blog</title>
+    <description>News about Star Wars Wars and other Star Wars Mashups, Supercuts, Fan Edits and More</description>
+    <link>{{ site.url }}/blog</link>
+	<atom:link href="{{ site.url }}{{page.url }}" rel="self" type="application/rss+xml" />
+    {% for post in site.posts %}
+      {% unless post.link %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        {% if post.excerpt %}
+          <description>{{ post.excerpt | strip_html }}</description>
+        {% else %}
+          <description>{{ post.content | strip_html }}</description>
+        {% endif %}
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>
+        {{ site.url }}{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+      </item>
+      {% endunless %}
+    {% endfor %}
+  </channel>
+</rss>

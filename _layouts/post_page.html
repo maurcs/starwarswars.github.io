@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	{% include head.html %}
+</head>
+
+<body>
+  <header>
+	  {% include header.html %}
+  </header>
+  <main class="with-sidebar">
+	  <aside>
+  		  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	  	  <!-- star wars wars text companion -->
+	  	  <ins class="adsbygoogle"
+	  	       style="float:right;display:inline-block;width:300px;height:600px"
+	  	       data-ad-client="ca-pub-5155981203694941"
+	  	       data-ad-slot="6784021313"></ins>
+	  	  <script>
+	  	  (adsbygoogle = window.adsbygoogle || []).push({});
+	  	  </script>
+	  </aside>
+	  
+	  <section class="blog-posts">
+		  {{ content }}
+		  {% include comments.html %}
+	  </section>
+    </main>
+    <footer>
+  	  {% include footer.html %}
+    </footer>
+    {% include page_loaded.html %}
+  </body>
+  </html>

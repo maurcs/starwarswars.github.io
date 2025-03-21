@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ /pages/$1.html [L,QSA]
+
+RewriteCond %{HTTP_HOST} ^www.starwarswars.com [NC]
+RewriteRule ^(.*)$ http://starwarswars.com/$1 [L,R=301]
+

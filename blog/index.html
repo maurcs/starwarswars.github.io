@@ -1,0 +1,55 @@
+---
+layout: posts
+title: A blog about Star Wars Mashups, Supercuts, and Fan Edits
+description: News about Star Wars Wars and other Star Wars Mashups, Supercuts, Fan Edits and More
+hero_image: http://starwarswars.com/images/star-wars-wars-hero.jpg
+---
+
+	{% for post in paginator.posts %}
+		<div class="blog_post">
+			{{ post.excerpt }}
+			<div class="comment_count">
+				<a href="{{ post.url }}#disqus_thread">Continue...</a> &nbsp; | &nbsp; <span>{{ post.date | date: '%B %d, %Y' }}</span>
+			</div>
+		</div>
+		{% if forloop.index == 3 %}
+			<aside class="blog-list-ad">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- star wars wars blog index -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:728px;height:90px"
+				     data-ad-client="ca-pub-5155981203694941"
+				     data-ad-slot="9330627717"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</aside>
+		{% endif %}
+
+		{% if forloop.index == 6 %}
+			<aside class="blog-list-ad">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- star wars wars blog index 2 -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:728px;height:90px"
+				     data-ad-client="ca-pub-5155981203694941"
+				     data-ad-slot="7574692910"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</aside>
+		{% endif %}
+		
+    {% endfor %}
+	
+	<div class="pagination">
+	  {% if paginator.previous_page %}
+	    <a href="{{ paginator.previous_page_path }}" class="previous">Newer videos</a>
+	  {% endif %}
+	  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+	  {% if paginator.next_page %}
+	    <a href="{{ paginator.next_page_path }}" class="next">More videos</a>
+	  {% else %}
+	    <span class="next ">No more videos</span>
+	  {% endif %}
+	</div>

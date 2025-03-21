@@ -1,0 +1,226 @@
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0b1 | 201101 
+    NOTE:WORK IN PROGRESS
+    USE WITH CAUTION AND TEST WITH ABANDON */
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+    display:block;
+}
+body{
+    line-height:1;
+}
+ol,ul{
+    list-style:none;
+}
+blockquote,q{
+    quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+    content:’’;
+    content:none;
+}
+/* remember to define visible focus styles! 
+:focus{
+    outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:line-through;
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+/* GO! */
+body{
+  background:url(/images/star-wars-wars-bg.jpg) repeat #191919;
+  /*background:black;*/
+  font-family: 'Droid Serif', serif;
+  color:#E3F9FA;
+}
+h1, h1 a, h1 a:visited, h1 a:hover{
+  font-family: 'Droid Sans', sans-serif;
+  font-size:50px;
+  font-weight:bolder;
+  color:#F0E359;
+  text-transform:uppercase;
+  text-decoration:none;
+  text-shadow: 3px 3px #3C3035;
+}
+h2,h3,h2 a{
+  font-family: 'Droid Sans Mono', sans-serif;
+  color:#F0E359;
+  text-decoration:none;
+  margin:10px;
+}
+header, main, footer{
+  width:960px;
+  margin:auto;
+  position:relative;
+}
+header{
+  /*background:url(/images/header-bg.jpg) top center no-repeat;*/
+}
+header, footer{
+  text-align:center;
+  padding:50px;
+}
+header p{
+  color:#8CF0F5;
+  font-size:1em;
+}
+body{
+}
+main{
+	display:block;
+}
+nav{
+  padding:25px;
+  font-family: 'Droid Sans Mono', sans-serif;
+  font-weight:bold;
+}
+nav a, .pagination a, .comment_count a{
+  color:#F0E359;
+  text-decoration:none;
+  margin:0 15px;
+  text-shadow: 2px 2px #3C3035;
+}
+.social-links{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	width:70;
+	position:absolute;
+	top:10px;
+	right:110px;
+}
+.social-links li{
+	float:left;
+	margin:0 0 0 10px;
+}
+section {
+  margin:20px auto;
+  font-size:.95em;
+  line-height:135%;
+}
+section p{
+  padding-bottom:10px;
+}
+.creator_credit{
+  font-family: 'Droid Sans', sans-serif;
+}
+.channel_link{
+  color:#8CF0F5;
+}
+.channel_link{
+  color:#8CF0F5;
+}
+footer{
+  height:50px;
+  color:#F0E359;
+  display:block;
+  clear:both;
+}
+section p a, section p a:visited,footer a, footer a:hover, footer a:visited{
+  color:#8CF0F5;
+  text-decoration:none;
+}
+.magnet_link{
+  display:block;
+  float:right;
+  background:url(/images/128px-Magnet_icon.png) center left no-repeat;
+  font-family: 'Droid Sans Mono', sans-serif;
+  font-weight:bold;
+  color:#F0E359;
+  text-decoration:none;
+  padding-left:20px;
+}
+.hero-content{
+	background:rgba(98,98,98,.75);
+}
+.hero-description{
+	padding:10px;
+}
+.with-sidebar section{
+	width:660px;
+	float:left;
+}
+.with-sidebar aside{
+	width:300px;
+	float:right;
+}
+.with-sidebar aside.blog-list-ad{
+	width:100%;
+	float:none;
+	margin-bottom:20px;
+}
+
+/* blog posts */
+.blog-posts{
+}
+.blog-posts article{
+	padding:10px;
+	background:rgba(98,98,98,.75);
+	margin-bottom:20px;
+}
+.blog-posts article h2{
+	margin-bottom:10px;
+}
+.blog-posts article p{
+	margin:10px 0;
+}
+.pagination{
+	padding:10px;
+	text-align:center;
+}
+#disqus_thread{
+	padding:10px;
+}
+.comment_count{
+	margin-bottom:35px;
+	text-align:right;
+}
+.post_date{
+	font-size: 75%;
+	padding:0 5px 5px 5px;
+	color:rgb(120,120,120);
+}
