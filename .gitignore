@@ -16,3 +16,4 @@ _site/
 .ruby-version
 .ruby-gemset-old
 .ruby-version-old
+Gemfile.lock
