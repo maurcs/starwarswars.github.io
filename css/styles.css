@@ -224,3 +224,20 @@ section p a, section p a:visited,footer a, footer a:hover, footer a:visited{
 	padding:0 5px 5px 5px;
 	color:rgb(120,120,120);
 }
+
+
+.screenplay{
+	font-family: "Courier New";
+	background: #FFF;
+	color:#222;
+	padding:10px;
+	max-width: 540px;
+}
+.screenplay .dialogue h4{
+	text-align:center;
+	margin-top:15px;
+}
+
+.screenplay .dialogue p{
+	padding: 0 100px;
+}
